@@ -236,7 +236,7 @@ local SaveManager = {} do
 				return self.Library:Notify('TomatoWare.xyz: Failed to overwrite config: ' .. err)
 			end
 
-			self.Library:Notify(string.format('Overwrote config %q', name))
+			self.Library:Notify(string.format('TomatoWare.xyz: Overwrote config %q', name))
 		end)
 		
 		section:AddButton('Autoload config', function()
