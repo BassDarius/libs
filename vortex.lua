@@ -6,9 +6,9 @@ end
 
 local Menu_Data = {
     Disabled_Colors = Color3.fromRGB(255, 0, 0),
-    Cursor_Color = Color3.fromRGB(172, 81, 224),
-    Colors = Color3.fromRGB(172, 81, 224), 
-    Drop_Downs = Color3.fromRGB(172, 81, 224), 
+    Cursor_Color = Color3.fromRGB(190, 85, 250),
+    Colors = Color3.fromRGB(190, 85, 250), 
+    Drop_Downs = Color3.fromRGB(190, 85, 250), 
     Drop_Down_BackGround = Color3.fromRGB(20, 20, 20), 
 }
 
@@ -38,7 +38,7 @@ local notifications1 = {}
 local notifications2 = {}
 menu.bg.Position     = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
 menu.Parent          = game:GetService("CoreGui")
-menu.bg.pre.Text = '<font color="#ac51e0">Vortex<font color="#ffffff">.hook | <font color="#ac51e0">Paid'
+menu.bg.pre.Text = ' <font color="#ac51e0"> Vortex<font color="#ffffff">.hook | <font color="#ac51e0">Paid'
 local library = {colorpicking = false;tabbuttons = {};tabs = {};options = {};flags = {};scrolling = false;playing = false;multiZindex = 200;toInvis = {};libColor = Menu_Data.Colors;disabledcolor = Color3.fromRGB(233, 0, 0);blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}}
 
 function draggable(a) local b=inputService;local c;local d;local e;local f;local function g(h)if not library.colorpicking then local i=h.Position-e;a.Position=UDim2.new(f.X.Scale,f.X.Offset+i.X,f.Y.Scale,f.Y.Offset+i.Y)end end;a.InputBegan:Connect(function(h)if h.UserInputType==Enum.UserInputType.MouseButton1 or h.UserInputType==Enum.UserInputType.Touch then c=true;e=h.Position;f=a.Position;h.Changed:Connect(function()if h.UserInputState==Enum.UserInputState.End then c=false end end)end end)a.InputChanged:Connect(function(h)if h.UserInputType==Enum.UserInputType.MouseMovement or h.UserInputType==Enum.UserInputType.Touch then d=h end end)b.InputChanged:Connect(function(h)if h==d and c then g(h)end end)end
