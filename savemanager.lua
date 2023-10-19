@@ -1,4 +1,3 @@
-local CurrentConfig = "none"
 
 local httpService = game:GetService('HttpService')
 
@@ -237,7 +236,6 @@ local SaveManager = {} do
 			end
 
 			self.Library:Notify(string.format('Loaded config %q', name))
-			CurrentConfig = tostring(%q)
 		end)
 
 		section:AddButton('Overwrite config', function()
