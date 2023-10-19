@@ -1,3 +1,4 @@
+_G.CurrentConfig = "none"
 
 local httpService = game:GetService('HttpService')
 
