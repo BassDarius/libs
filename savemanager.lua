@@ -195,9 +195,8 @@ local SaveManager = {} do
 			end
 
 			self.Library:Notify(string.format('Auto loaded config %q', name))
-      if _G.CurrentConfig then
-          _G.CurrentConfig = %q
-      end
+        	        _G.CurrentConfig = %q
+
 		end
 	end
 
